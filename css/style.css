@@ -190,6 +190,8 @@
   .header {
     background-image: url(../images/mobile/header__bg.svg);
     background-size: cover;
+    height: auto;
+    margin-bottom: 0;
   }
   .header__wrapper {
     padding-top: 0;
@@ -302,6 +304,7 @@
   }
   .photo__title {
     text-align: center;
+    margin-top: 5vw;
   }
   .photo__text {
     text-align: center;
@@ -404,7 +407,7 @@
   }
   .social__title {
     text-align: center;
-    margin-top: 5vw;
+    margin-top: 10vw;
     margin-bottom: 5vw;
   }
   .social__text {
