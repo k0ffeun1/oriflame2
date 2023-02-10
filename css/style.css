@@ -1,8 +1,6 @@
 @font-face {
   font-family: "Oriflame-regular";
-  src: url("/fonts/OriflameSans2.0-Regular.otf");
-  font-style: normal;
-  font-weight: 400;
+  src: url("/fonts/OriflameSans2.0-Regular.otf") format("opentype");
 }
 @font-face {
   font-family: "Oriflame-Bold";
@@ -28,6 +26,7 @@
 
 .title {
   font-family: "Oriflame-Bold2";
+  font-family: "";
   font-size: 2.1vw;
   letter-spacing: 0.03em;
   font-weight: 700;
