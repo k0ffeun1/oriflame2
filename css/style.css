@@ -566,10 +566,20 @@
 @media (max-width: 500px) {
   .result {
     padding-top: 5vw;
+    padding-bottom: 5vw;
     background-image: url(../images/mobile/result__mobile.svg);
     background-size: 100vw;
     background-repeat: no-repeat;
     background-position-y: -27vw;
+  }
+  .result__title {
+    margin-bottom: 5vw;
+  }
+  .result__item {
+    margin-bottom: 5vw;
+  }
+  .result__content-title {
+    font-size: 60px;
   }
   .result__content {
     flex-direction: column;
