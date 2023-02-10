@@ -78,7 +78,7 @@
 }
 
 .header__img {
-  width: 38vw;
+  width: 35vw;
 }
 
 .idea-task {
@@ -147,6 +147,16 @@
 @media (max-width: 1024px) {
   .header__img {
     width: 45vw;
+  }
+}
+@media (max-width: 840px) and (max-height: 400px) {
+  .header__img {
+    width: 25vw;
+  }
+}
+@media (max-width: 769px) {
+  .header__wrapper {
+    height: 100vh;
   }
 }
 @media (min-width: 2000px) {
