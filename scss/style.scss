@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'Oriflame-regular';
     src: url('../fonts/OriflameSans2.0-Regular.otf') format('opentype');
+    font-style: normal;
+    font-weight: 400;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
     font-weight: 700;
 }
 
+//============================MAIN-STYLES=================================
 
 .oriflame {
     margin-left: 185px;
@@ -54,6 +57,8 @@
 .bold {
     font-family: 'Oriflame-Bold';
 }
+
+//============================HEADER+IDEA-TASK=================================
 
 
 .bg1-2 {
@@ -125,6 +130,17 @@
 
 .task__text {}
 
+@media (min-width: 2000px) {
+    .idea-task__img {
+        top: -20%;
+    }
+    .task__img {
+        right: -20%;
+    }
+}
+
+//============================MOVIE=================================
+
 .movie {
     padding-bottom: 5vw;
 }
@@ -153,6 +169,8 @@
     height: 34.375vw;
     margin: 0 auto;
 }
+
+//============================PHOTO=================================
 
 .photo {
     background-image: url(../images/photo/photo__bg.svg);
@@ -186,6 +204,8 @@
 
 .photo__img {}
 
+//============================LANDING=================================
+
 .landing {
     background-image: url('../images/landing/landing__bg.svg');
     background-size: cover;
@@ -216,6 +236,8 @@
 .landing__text {
     color: #fff;
 }
+
+//============================SOCIAL=================================
 
 .social {
     background-image: url(../images/social/social__bg.svg);
@@ -251,6 +273,8 @@
 
 .social__img {}
 
+//============================REKLAMA=================================
+
 .reklama {
     background-image: url(../images/reklama/reklama__bg.svg);
     background-size: cover;
@@ -276,6 +300,8 @@
 .reklama__title {}
 
 .reklama__text {}
+
+//============================OTHER=================================
 
 .other {
     background-image: url(../images/other/other__bg.svg);
@@ -306,6 +332,8 @@
 }
 
 .other__img {}
+
+//============================RESULT=================================
 
 .result {
     margin-bottom: 7.8vw;
@@ -340,6 +368,8 @@
 .result__content-text {
     color: #007681;
 }
+
+//============================TEAM=================================
 
 .team {
     background-image: url(../images/team/team__bg.svg);

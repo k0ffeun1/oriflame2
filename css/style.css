@@ -1,6 +1,8 @@
 @font-face {
   font-family: "Oriflame-regular";
   src: url("../fonts/OriflameSans2.0-Regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
 }
 @font-face {
   font-family: "Oriflame-Bold";
@@ -114,6 +116,14 @@
   right: -25%;
 }
 
+@media (min-width: 2000px) {
+  .idea-task__img {
+    top: -20%;
+  }
+  .task__img {
+    right: -20%;
+  }
+}
 .movie {
   padding-bottom: 5vw;
 }
