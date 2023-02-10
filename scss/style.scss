@@ -22,13 +22,23 @@
 //============================MAIN-STYLES=================================
 
 .oriflame {
+    overflow-x: hidden;
     margin-left: 185px;
+}
+
+@media (max-width: 1023px) {
+    .oriflame {
+        margin-left: 0;
+    }
 }
 
 .container {
     max-width: 77.7vw;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+@media (max-width: 1366px) {
 }
 
 .title {
@@ -111,11 +121,12 @@
 .idea-task__img {
     position: absolute;
     transform: translate(-50%);
-    top: -30%;
+    top: -5vw;
+    width: 10vw;
 }
 
 .idea__img {
-    left: 0;
+    left: 0vw;
 }
 
 .idea__text {}
@@ -125,15 +136,44 @@
 }
 
 .task__img {
-    right: -25%;
+    right: -10vw;
 }
 
 .task__text {}
+
+@media(max-width: 1550px) {
+    .header__img {
+        width: 32vw;
+    }
+    .text {
+        font-size: 1.4vw;
+    }
+}
+
+@media (max-width: 1366px) {
+    .header__img {
+        width: 35vw;
+    }
+    .idea-task__img {
+        width: 7vw;
+        top: -3vw;
+    }
+    .task__img {
+        right: -7vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__img {
+        width: 45vw;
+    }
+}
 
 @media (min-width: 2000px) {
     .idea-task__img {
         top: -20%;
     }
+
     .task__img {
         right: -20%;
     }
@@ -273,33 +313,51 @@
 
 .social__img {}
 
-//============================REKLAMA=================================
-
-.reklama {
-    background-image: url(../images/reklama/reklama__bg.svg);
-    background-size: cover;
-    margin-top: -0.1vw;
+@media (max-width:1441px) {
+    .social {
+        margin-top: -1vw;
+    }
 }
 
-.reklama__wrapper {
+//============================REK=================================
+
+.unique {
+    background-image: url(../images/unique/unique__bg.svg);
+    background-size: cover;
+    margin-top: -0.1vw;
+    padding-bottom: 2vw;
+}
+
+.unique__wrapper {
     display: flex;
     align-items: center;
     padding-top: 3.65vw;
 }
 
-.reklama__image {
+.unique__image {
     flex-basis: 60%;
 }
 
-.reklama__img {}
+.rek__img {}
 
-.reklama__content {
+.unique__content {
     flex-basis: 40%;
 }
 
-.reklama__title {}
+.unique__title {
+    margin-bottom: 4vw;
+    color: #fff;
+}
 
-.reklama__text {}
+.unique__text {
+    color: #fff;
+}
+
+@media (max-width: 1441px) {
+    .unique {
+        margin-top: -1.5vw;
+    }
+}
 
 //============================OTHER=================================
 
@@ -333,10 +391,18 @@
 
 .other__img {}
 
+@media (max-width: 1441px) {
+    .other {
+        margin-top: -1vw;
+    }
+}
+
 //============================RESULT=================================
 
 .result {
-    margin-bottom: 7.8vw;
+    padding-bottom: 7.8vw;
+    background-image: url(../images/result/result__bg.svg);
+    background-size: 80%;
 }
 
 .result__wrapper {}
@@ -351,6 +417,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #fff;
 }
 
 .result__item {
@@ -432,3 +499,48 @@
     line-height: 145%;
     color: #007681;
 }
+
+
+//=====================SCROLL_BAR==========================\
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 12px;
+    /* ширина для вертикального скролла */
+    height: 8px;
+    /* высота для горизонтального скролла */
+    background-color: #fff3e3;
+  }
+  
+  /* ползунок скроллбара */
+  ::-webkit-scrollbar-thumb {
+    background-color: #ED93B6;
+    border-radius: 9em;
+    -webkit-box-shadow: inset 1px 1px 10px #f3faf7;
+            box-shadow: inset 1px 1px 10px #f3faf7;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #253861;
+  }
+  
+  /* Стрелки */
+  ::-webkit-scrollbar-button:vertical:start:decrement {
+    background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+  }
+  
+  ::-webkit-scrollbar-button:vertical:end:increment {
+    background: linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+  }
+  
+  ::-webkit-scrollbar-button:horizontal:start:decrement {
+    background: linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+  }
+  
+  ::-webkit-scrollbar-button:horizontal:end:increment {
+    background: linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+  }
